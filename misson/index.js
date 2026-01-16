@@ -9,7 +9,7 @@ function changeTheme() {
     if (current === 'dark') {
         // code for changes to colors and logo
         document.body.style.backgroundColor =" #000";
-        logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-white.png";
+        logo.src = "C:\wdd131\misson\byui-logo-white.png";
         document.body.style.color = "#fdfdfdff"
     } else {
         // code for changes to colors and logo
