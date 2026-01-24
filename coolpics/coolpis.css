@@ -1,0 +1,50 @@
+body {
+    line-height: 1.6;
+}
+header {
+    background-color: rgb(0, 115, 255);
+    color: white;
+    padding: 1rem;
+}
+.topic{
+    text-align: center;
+}
+nav {
+    display: none;
+}
+.links{
+    list-style: none;
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
+.images{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.images img{
+    width: 100%;
+    aspect-ratio: 1 /1;
+}
+footer{
+    text-align: center;
+}
+@media (min-width: 600px){
+    nav {
+        display: block;
+    }
+    .links{
+        margin-top: 1rem;
+    }
+    .images{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 900px){
+    .images{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
