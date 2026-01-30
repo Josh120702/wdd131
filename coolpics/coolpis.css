@@ -32,6 +32,26 @@ nav {
 footer{
     text-align: center;
 }
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    color: black;
+    background-color: white;
+    border: none;
+}
 @media (min-width: 600px){
     nav {
         display: block;
@@ -46,5 +66,13 @@ footer{
 @media (min-width: 900px){
     .images{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
     }
 }
