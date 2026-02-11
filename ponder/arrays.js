@@ -22,7 +22,7 @@ let List = document.querySelector('#List');
 const stepsHtml = steps.map(listTemplate);
 
 function listTemplate(item){
-    return <li>${item}</li>
+    return `<li>${item}</li>`
 }
 
 List.innerHTML = stepsHtml.join('');
