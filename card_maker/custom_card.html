@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Card</title>
+    <link rel="stylesheet" href="custom_card.css">
+    <script src="custom_card.js"defer></script>
+</head>
+<body>
+    <header>
+    <h1>Custom MTG Card Maker</h1>
+    </header>
+   
+        <section class="details">
+            <p>For mana cost W = white, U = blue, B = black, R = red, G = green</p>
+            <label>Name:
+                <input type="text"id="name">
+            </label>
+            <label>Mana:
+                <input type="text"id="mana" placeholder="e.g. 3RG">
+            </label>
+            <label>Type:
+                <input type="text"id="type" placeholder="Creatue - Dragon">
+            </label>
+            <label>Description:
+                <textarea id="description"></textarea>
+            </label>
+            <label>Rarity:
+                <input type="text"id="rarity">
+            </label>
+            <label>Stats:
+                <input type="text"id="stats">
+            </label>
+            <button id="generate">Generate Card</button>
+        </section>
+    <main>
+    <div class="card" id="card">
+        <div class="card-header">
+            <span id="cardName">Card Name</span>
+            <span id="cardMana"class="mana-container"></span>
+        </div>
+        <div class="card-art">
+            <img src="Dragon.webp" alt="Dragon">
+        </div>
+        <div class="card-type" id="cardType">
+            Creature - Dragon
+        </div>
+        <div class="card-text" id="cardDesc">
+            Flying
+        </div>
+        <div class="card-footer">
+            <span id="cardRarity">Rare</span>
+            <span id="cardStats">5/5</span>
+        </div>
+        
+    </div>
+    </main>
+</body>
+</html>
